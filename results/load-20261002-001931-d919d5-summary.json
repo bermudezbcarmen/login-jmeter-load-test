@@ -1,0 +1,29 @@
+﻿{
+    "mode":  "load",
+    "samples":  2451,
+    "errors":  442,
+    "errorPercent":  18.033455732354142,
+    "over1500ms":  442,
+    "maxResponseMs":  14681,
+    "averageResponseMs":  1623.4606283149735,
+    "overallTps":  16.304130911993614,
+    "steadyWindowSeconds":  120,
+    "steadyTps":  15.425,
+    "successfulSteadyTps":  11.741666666666667,
+    "targetTps":  21,
+    "requiredTps":  20,
+    "acceptableErrorPercentExclusive":  3,
+    "passed":  false,
+    "responseCodes":  [
+                          {
+                              "code":  "201",
+                              "count":  2409
+                          },
+                          {
+                              "code":  "Non HTTP response code: org.apache.http.conn.ConnectTimeoutException",
+                              "count":  42
+                          }
+                      ],
+    "resultsFile":  "C:\\Users\\bermu\\Documents\\cursos\\Prueba Tecnica - Sofka\\login-jmeter-load-test\\results\\load-20261002-001931-d919d5.jtl",
+    "reportIndex":  "C:\\Users\\bermu\\Documents\\cursos\\Prueba Tecnica - Sofka\\login-jmeter-load-test\\reports\\load-20261002-001931-d919d5\\index.html"
+}

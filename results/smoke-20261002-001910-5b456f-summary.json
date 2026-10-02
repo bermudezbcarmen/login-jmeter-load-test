@@ -1,0 +1,25 @@
+﻿{
+    "mode":  "smoke",
+    "samples":  5,
+    "errors":  1,
+    "errorPercent":  20,
+    "over1500ms":  1,
+    "maxResponseMs":  1635,
+    "averageResponseMs":  646.2,
+    "overallTps":  1.0817827780181739,
+    "steadyWindowSeconds":  null,
+    "steadyTps":  null,
+    "successfulSteadyTps":  null,
+    "targetTps":  1,
+    "requiredTps":  20,
+    "acceptableErrorPercentExclusive":  3,
+    "passed":  false,
+    "responseCodes":  [
+                          {
+                              "code":  "201",
+                              "count":  5
+                          }
+                      ],
+    "resultsFile":  "C:\\Users\\bermu\\Documents\\cursos\\Prueba Tecnica - Sofka\\login-jmeter-load-test\\results\\smoke-20261002-001910-5b456f.jtl",
+    "reportIndex":  "C:\\Users\\bermu\\Documents\\cursos\\Prueba Tecnica - Sofka\\login-jmeter-load-test\\reports\\smoke-20261002-001910-5b456f\\index.html"
+}
