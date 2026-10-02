@@ -1,0 +1,29 @@
+CONCLUSIONES - PRUEBA DE CARGA DEL LOGIN
+
+Escenario ejecutado:
+- 60 hilos, ramp-up de 30 segundos y duracion de 150 segundos.
+- Ventana estable de 120 segundos.
+- Objetivo del Constant Throughput Timer: 1260 peticiones/minuto (21 TPS).
+- Codigo HTTP esperado: 201, aceptado para este servicio.
+- Validacion JSON: token presente, no nulo ni vacio.
+- Duration Assertion: maximo 1500 ms por peticion.
+
+Resultados de la ejecucion final:
+- Peticiones totales: 3095.
+- TPS de la ventana estable: 20,77.
+- TPS global, incluido ramp-up y finalizacion de respuestas: 20,61.
+- Errores: 0 (0%).
+- Tiempo de respuesta promedio: 370,47 ms.
+- Tiempo de respuesta maximo: 1031 ms (1,031 segundos).
+- Respuestas por encima de 1500 ms: 0.
+- Las 3095 respuestas devolvieron HTTP 201 y aprobaron las aserciones.
+
+Evaluacion:
+- Minimo 20 TPS: CUMPLE.
+- Tiempo de respuesta maximo de 1,5 segundos: CUMPLE.
+- Tasa de error estrictamente menor al 3%: CUMPLE.
+
+El servicio cumplio los tres criterios durante el escenario ejecutado. Este
+resultado corresponde a estos datos y a esta ventana de carga; no determina
+la capacidad maxima del servicio ni su comportamiento en pruebas mas largas.
+
